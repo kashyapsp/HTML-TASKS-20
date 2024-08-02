@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page with Scroll Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            scroll-behavior: smooth; 
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #00796b;
+        }
+        .scrollable-section {
+            height: 200px;
+            overflow-y: scroll; 
+            padding: 10px;
+            background-color: #b2dfdb;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        .scrollable-content {
+            height: 600px; 
+            background: linear-gradient(to bottom, #004d40, #b2dfdb);
+        }
+        .link-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+        a {
+            color: #004d40;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+    
+        .scrollable-section::-webkit-scrollbar {
+            width: 10px;
+        }
+        .scrollable-section::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .scrollable-section::-webkit-scrollbar-thumb {
+            background: #00796b;
+            border-radius: 10px;
+        }
+        .scrollable-section::-webkit-scrollbar-thumb:hover {
+            background: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Page with Scroll Properties</h1>
+        <div class="scrollable-section">
+            <div class="scrollable-content">
+                <p>Scrollable content goes here. </p>
+                <p>Keep adding content to test scrolling...</p>
+
+            </div>
+        </div>
+        <div class="link-section">
+            <a href="#top">Back to Top</a>
+        </div>
+    </div>
+    <div id="top" style="height: 100px; background-color: #00796b; color: white; text-align: center; line-height: 100px;">
+        Top of the Page
+    </div>
+</body>
+</html>

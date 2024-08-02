@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page with Margin Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto; /* Centering container with margin */
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #00796b;
+            margin-bottom: 20px; /* Margin below heading */
+        }
+        .box {
+            background-color: #b2dfdb;
+            padding: 15px;
+            margin-bottom: 20px; /* Margin below each box */
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .box:first-of-type {
+            margin-top: 0; /* No margin on top for the first box */
+        }
+        .box:last-of-type {
+            margin-bottom: 0; /* No margin on bottom for the last box */
+        }
+        .centered-box {
+            margin: 0 auto; /* Centering box with auto margins */
+            width: 50%;
+            background-color: #004d40;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px; /* Margin below each paragraph */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Page with Margin Properties</h1>
+        <div class="box">
+            <h2>Box 1</h2>
+            <p>This is the first box. It has margin at the bottom to separate it from the next box.</p>
+        </div>
+        <div class="box">
+            <h2>Box 2</h2>
+            <p>This is the second box. It also has margin at the bottom for spacing.</p>
+        </div>
+        <div class="centered-box">
+            <h2>Centered Box</h2>
+            <p>This box is centered horizontally using auto margins.</p>
+        </div>
+    </div>
+</body>
+</html>

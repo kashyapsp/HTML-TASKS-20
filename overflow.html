@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page with Overflow Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+        .box {
+            width: 100%;
+            max-width: 600px;
+            margin: 10px auto;
+            padding: 20px;
+            border: 2px solid #00796b;
+            border-radius: 8px;
+            box-sizing: border-box;
+            overflow: hidden; 
+        }
+        .visible-box {
+            background-color: #b2dfdb;
+            overflow: visible; 
+        }
+        .hidden-box {
+            background-color: #004d40;
+            color: #ffffff;
+            overflow: hidden; 
+        }
+        .scroll-box {
+            background-color: #00796b;
+            color: #ffffff;
+            overflow: scroll; 
+        }
+        .auto-box {
+            background-color: #004d40;
+            color: #ffffff;
+            overflow: auto; 
+        }
+        .content {
+            height: 200px; 
+            background: linear-gradient(to bottom, #004d40, #b2dfdb);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Overflow Properties</h1>
+        
+        <div class="box visible-box">
+            <h2>Visible Overflow</h2>
+            <p class="content">This box uses <code>overflow: visible;</code></p>
+        </div>
+        
+        <div class="box hidden-box">
+            <h2>Hidden Overflow</h2>
+            <p class="content">This box uses <code>overflow: hidden;</code></p>
+        </div>
+        
+        <div class="box scroll-box">
+            <h2>Scroll Overflow</h2>
+            <p class="content">This box uses <code>overflow: scroll;</code></p>
+        </div>
+        
+        <div class="box auto-box">
+            <h2>Auto Overflow</h2>
+            <p class="content">This box uses <code>overflow: auto;</code></p>
+        </div>
+        
+    </div>
+</body>
+</html>
